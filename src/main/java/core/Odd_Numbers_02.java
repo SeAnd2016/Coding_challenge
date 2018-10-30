@@ -1,5 +1,13 @@
 package core;
 
+/*
+Odd numbers (iterative, not recursive)
+Odd number is an integer (positive or negative, not a fraction), which is not divisible by 2.
+Example: -3, -1, 7, 11
+
+Problem: Print out odd numbers up to given number
+ */
+
 import java.util.Scanner;
 
 public class Odd_numbers_02 {
