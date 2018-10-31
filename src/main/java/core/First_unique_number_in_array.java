@@ -7,7 +7,7 @@ public class First_unique_number_in_array {
 	
 	public static void main(String[] args) {
 	
-		List<Integer> unique = new ArrayList() {{add(1); add(2); add(3); add(3); add(2); add(1); add(1); add(1); add(1); add(1); add(3); add(2);}};
+		List<Integer> unique = new ArrayList() {{add(1); add(2); add(3); add(3); add(2); add(1); add(1); add(1); add(10); add(1); add(3); add(2);}};
 		System.out.print("There are numbers in array: ");
 		for (int i = 0; i < unique.size(); i++) {
 		System.out.print(unique.get(i) + " ");}
