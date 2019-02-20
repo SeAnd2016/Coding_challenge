@@ -12,11 +12,16 @@ public class HappyNumber {
 	
 	public static boolean isHappy(int number) {
 		Set<Integer> unique = new HashSet<Integer>();
-		while (unique.add(number)) {int value = 0;
-			while (number > 0) {value += Math.pow(number % 10, 2);
-												  number /= 10;}
-		 										  number = value;}
-		return number == 1;}
+		while (unique.add(number)) {
+			int value = 0;
+			while (number > 0) {
+				value += Math.pow(number % 10, 2);
+				number /= 10;
+				}
+		number = value;
+		}
+	return number == 1;
+	}
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);

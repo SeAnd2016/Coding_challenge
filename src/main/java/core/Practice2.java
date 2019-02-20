@@ -1,22 +1,34 @@
 package core;
 
+import java.lang.reflect.Array;
 import java.util.Arrays;
+import java.util.List;
+import java.util.Set;
+import java.util.TreeSet;
 
 public class Practice2 {
 	
-	static int numbers(double[] array) {
+	public static int numbers(Integer num[]) {
 		
-		Arrays.sort(array);
+		//Arrays.sort(num);
 		
-		return (int) (array[0] * array[1]);
-	}	
+		List<Integer> list = Arrays.asList(num);
+		Set<Integer> set = new TreeSet(list);
+
+		Integer[] newList = new Integer[set.size()];
+		int i = 0;
+		for (Integer a: set)
+			newList[i++] = a;
+			
+		return newList[0] * newList[1];
+		}
+	
 	public static void main(String[] a) {
 		
-		double nums[] = {50, 40, 30, 20, 1.5, 10};
+		Integer numbers[] = {20, 3, 3, 4, 5, 6, 7};
 		
-		double sum = Practice2.numbers(nums);
-		System.out.println(sum);
-		
-	}
+		System.out.print("Produce of two minimum numbers in array is: " + numbers(numbers));
 		
 	}
+		
+}
